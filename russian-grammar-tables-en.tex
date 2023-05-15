@@ -1,0 +1,118 @@
+% Title:       Russian grammar tables
+% Subject:     Russian declension of nouns, pronouns, and adjectives
+% Author:      Leo Arnold
+% URL:         https://github.com/leoarnold/russian-grammar-tables
+% License:     CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
+
+\documentclass[a4paper, landscape, 11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage[tmargin=15mm, rmargin=10mm, bmargin=20mm, lmargin=10mm]{geometry}
+
+\usepackage{hyperref, multirow, scrlayer-scrpage, setspace, tabularx, xcolor}
+
+\hypersetup{
+  pdftitle   = {Russian grammar tables},
+  pdfsubject = {Russian declension of nouns, pronouns, and adjectives},
+  pdfauthor  = {Leo Arnold},
+}
+
+\pagestyle{scrheadings}
+\ohead{\relax}
+\ifoot{Download: \url{https://github.com/leoarnold/russian-grammar-tables}}
+\ofoot{Author: Leo Arnold, Licence: \href{http://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}}
+
+\setlength{\parindent}{0mm}
+\onehalfspacing
+
+\newcommand{\an}[1]{\textcolor{teal}{#1}} % animate
+\newcommand{\us}[1]{\textcolor{blue}{#1}} % unstressed
+\newcommand{\st}[1]{\textcolor{red}{#1}}  % stressed
+
+\begin{document}
+
+\strut\vfil
+
+\begin{center}
+	\Huge\bfseries Personal Pronoun
+\end{center}
+
+\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|X|X|X|}
+	\hline
+	Nom. & кто?  & я    & ты    & он/о   & она           & мы   & вы   & они    \\ %\hline
+	Gen. & кого? & меня & тебя  & (н)его & (н)её         & нас  & вас  & (н)их  \\ %\hline
+	Dat. & кому? & мне  & тебе  & (н)ему & (н)ей         & нам  & вам  & (н)им  \\ \cline{2-9}
+	Acc. &                      \multicolumn{8}{c|}{same as Gen.}                      \\ \cline{2-9}
+	Inst. & кем?  & мной & тобой & (н)им  & (н)ей / (н)ею & нами & вами & (н)ими \\ %\hline
+	Prep. & ком?  & мне  & тебе  & нём    & ней           & нас  & вас  & них    \\ \hline
+\end{tabularx}
+
+\vfill
+
+\begin{center}
+	\Huge\bfseries Possessive Pronoun
+\end{center}
+
+\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|X|X|X|X|X|X|X|}
+	\hline
+	\strut & \strut     & \multicolumn{4}{l|}{я (мо-), ты (тво-), ся (сво-)} & он/о   & она    & \multicolumn{4}{l|}{мы (наш-), вы (ваш-)}   & они    \\ \hline
+	  Nom.    & что?       & й        & ё             & я      & и              & \strut & \strut & $\emptyset$ & е          & а      & и       & \strut \\ %\cline{1-6}\cline{9-12}
+	  Gen.    & чего?      & \multicolumn{2}{c|}{его} & ей     & их             & \strut & \strut & \multicolumn{2}{c|}{его} & ей     & их      & \strut \\ %\cline{1-6}\cline{9-12}
+	  Dat.    & чему?      & \multicolumn{2}{c|}{ему} & ей     & им             & \strut & \strut & \multicolumn{2}{c|}{ему} & ей     & им      & \strut \\ %\cline{1-6}\cline{9-12}
+	  Acc.    & что?       & й        & ё             & и      & и              & (н)его & (н)её  & $\emptyset$ & е          & у      & и       & (н)их  \\
+	\strut & \an{кого?} & \an{его} & \strut        & \strut & \an{их}        & \strut & \strut & \an{его}    & \strut     & \strut & \an{их} & \strut \\ %\cline{1-6}\cline{9-12}
+	  Inst.    & чем?       & \multicolumn{2}{c|}{им}  & ей     & ими            & \strut & \strut & \multicolumn{2}{c|}{им}  & ей     & ими     & \strut \\ %\cline{1-6}\cline{9-12}
+	  Prep.    & чём?       & \multicolumn{2}{c|}{ём}  & ей     & их             & \strut & \strut & \multicolumn{2}{c|}{ем}  & ей     & их      & \strut \\ \hline
+	\strut & \strut     & чей?     & чьё?          & чья?   & чеи?           & \strut & \strut & чей?        & чьё?       & чья?   & чеи?    & \strut \\ \hline
+\end{tabularx}
+
+\vfill\strut
+
+\newpage
+
+\begin{center}
+	\Huge\bfseries Adjective Endings
+\end{center}
+
+\begin{tabularx}{\textwidth}{|c|X|X|X|X||X|X|X|X|}
+	\hline
+	  & m                   & n  & f  & pl                     & m             & n        & f  & pl           \\ \hline
+	Nom. & ый / ой             & ое & ая & ые                     & ий            & ее       & яя & ие           \\
+	Gen. & \multicolumn{2}{c|}{ого} & ой & ых                     & \multicolumn{2}{c|}{его} & ей & их           \\
+	Dat. & \multicolumn{2}{c|}{ому} & ой & ым                     & \multicolumn{2}{c|}{ему} & ей & им           \\
+	Acc. & ый / ой  / \an{ого} & ое & ую & ые / \an{ых}           & ий / \an{его} & ее       & юю & ие / \an{их} \\
+	Inst. & \multicolumn{2}{c|}{ым}  & ой & ыми                    & \multicolumn{2}{c|}{им}  & ей & ими          \\
+	Prep. & \multicolumn{2}{c|}{ом}  & ой & ых                     & \multicolumn{2}{c|}{ем}  & ей & их           \\ \hline
+	  & \multicolumn{4}{l||}{активный, живой} & \multicolumn{4}{l|}{летний, синий}           \\ \hline
+\end{tabularx}
+
+\vfill
+
+\begin{center}
+\Huge\bfseries Noun Endings
+\end{center}
+
+\begin{tabularx}{\textwidth}{|c|XXXX|XXX|XXX|XX|}
+	\hline
+	\strut &                                        \multicolumn{7}{c|}{I. Declension}                                         &      \multicolumn{3}{c|}{II. Declension}      &      \multicolumn{2}{c|}{III. Declension}       \\
+	Singular   &                        \multicolumn{4}{c}{m}                         &    \multicolumn{3}{c|}{n}     & \multicolumn{3}{c|}{primarily f} & \multicolumn{1}{c}{f} & \multicolumn{1}{c|}{n} \\ \hline
+	  Nom.    & $\emptyset$         & \us{ь}            & й                 & и-й          & о           & (ь)е/ё   & и-е        & а           & я                 & и-я        & ь                     & мя                     \\
+	  Gen.    & а                   & я                 & я                 & и-я          & а           & (ь)я     & и-я        & ы           & и                 & и-и        & и                     & мен-и                  \\
+	  Dat.    & у                   & ю                 & ю                 & и-ю          & у           & (ь)ю     & и-ю        & е           & е                 & и-и        & и                     & мен-и                  \\ \cline{2-8}
+	  Acc.    &                    \multicolumn{4}{c|}{same as Nom. / \an{Gen.}}                     & \multicolumn{3}{c|}{same as Nom. / \an{Gen.}} & у           & ю                 & и-ю        & ь                     & мя                     \\ \cline{2-8}
+	  Inst.    & ом                  & \us{ем} / \st{ём} & \us{ем} / \st{ём} & и-ем         & ом          & (ь)ем/ём & и-ем       & ой          & \us{ей} / \st{ёй} & и-ей       & ью                    & мен-ем                 \\
+	Prep. (М)  & е (\st{у} / \st{ю}) & е                 & е                 & и-и          & е           & (ь)е     & и-и        & е           & е                 & и-и        & и (\st{и})            & мен-и                  \\ \hline
+	\strut & мост                & огонь             & чай               & сценарий     & небо        & море     & здание     & лампа       & неделя            & станция    & ночь                  & имя                    \\
+	Plural   & \an{кот / ёж}       & \an{учитель}      & \an{герой}        & \an{Василий} & \strut      & копьё    & \strut     & \an{папа}   & \an{героиня}      & \an{Мария} & \an{мышь}             & \strut                 \\ \hline
+	  Nom.    & ы                   & и                 & и                 & и-и          & а           & (ь)я     & и-я        & ы           & и                 & и-и        & и                     & мен-а                  \\
+	  Gen.    & ов / ей             & ей                & \us{ев} / \st{ёв} & и-ев         & $\emptyset$ & (ий) ей  & и-й        & $\emptyset$ & ь                 & и-й        & ей                    & мён                    \\
+	  Dat.    & ам                  & ям                & ям                & и-ям         & ам          & (ь)ям    & и-ям       & ам          & ям                & и-ям       & ям                    & мен-ам                 \\ \cline{2-13}
+	  Acc.    &                    \multicolumn{4}{c|}{same as Nom. / \an{Gen.}}                     & \multicolumn{3}{c|}{same as Nom. / \an{Gen.}} &     \multicolumn{3}{c|}{same as Nom. / \an{Gen.}}      &      \multicolumn{2}{c|}{same as Nom. / \an{Gen.}}       \\ \cline{2-13}
+	  Inst.    & ами                 & ями               & ями               & и-ями        & ами         & (ь)ями   & и-ями      & ами         & ями               & и-ями      & ями                   & мен-ами                \\
+	  Prep.    & ах                  & ях                & ях                & и-ях         & ах          & (ь)ях    & и-ях       & ах          & ях                & и-ях       & ях                    & мен-ах                 \\ \hline
+\end{tabularx}
+
+\end{document}

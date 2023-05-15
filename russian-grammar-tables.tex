@@ -12,7 +12,7 @@
 
 \usepackage[tmargin=15mm, rmargin=10mm, bmargin=20mm, lmargin=10mm]{geometry}
 
-\usepackage{hyperref, multirow, scrpage2, setspace, tabularx, xcolor}
+\usepackage{hyperref, multirow, scrlayer-scrpage, setspace, tabularx, xcolor}
 
 \hypersetup{
   pdftitle   = {Russian grammar tables},
@@ -80,7 +80,7 @@
 \begin{tabularx}{\textwidth}{|c|X|X|X|X||X|X|X|X|}
 	\hline
 	  & М                   & С  & Ж  & МЧ                     & М             & С        & Ж  & МЧ           \\ \hline
-	N & ый / ой             & ое & ая & ые                     & ий            & ее       & яя & ие           \\
+	И & ый / ой             & ое & ая & ые                     & ий            & ее       & яя & ие           \\
 	Р & \multicolumn{2}{c|}{ого} & ой & ых                     & \multicolumn{2}{c|}{его} & ей & их           \\
 	Д & \multicolumn{2}{c|}{ому} & ой & ым                     & \multicolumn{2}{c|}{ему} & ей & им           \\
 	В & ый / ой  / \an{ого} & ое & ую & ые / \an{ых}           & ий / \an{его} & ее       & юю & ие / \an{их} \\
@@ -97,9 +97,9 @@
 
 \begin{tabularx}{\textwidth}{|c|XXXX|XXX|XXX|XX|}
 	\hline
-	\strut &                                        \multicolumn{7}{c|}{I. cклонение}                                         &      \multicolumn{3}{c|}{II. cклонение}      &      \multicolumn{2}{c|}{III. cклонение}       \\
+	\strut &                                        \multicolumn{7}{c|}{I. склонение}                                         &      \multicolumn{3}{c|}{II. склонение}      &      \multicolumn{2}{c|}{III. склонение}       \\
 	  ЕЧ   &                        \multicolumn{4}{c}{мужскые}                         &    \multicolumn{3}{c|}{средные}     & \multicolumn{3}{c|}{преимущественно женские} & \multicolumn{1}{c}{ж} & \multicolumn{1}{c|}{с} \\ \hline
-	  N    & $\emptyset$         & \us{ь}            & й                 & и-й          & о           & (ь)е/ё   & и-е        & а           & я                 & и-я        & ь                     & мя                     \\
+	  И    & $\emptyset$         & \us{ь}            & й                 & и-й          & о           & (ь)е/ё   & и-е        & а           & я                 & и-я        & ь                     & мя                     \\
 	  Р    & а                   & я                 & я                 & и-я          & а           & (ь)я     & и-я        & ы           & и                 & и-и        & и                     & мен-и                  \\
 	  Д    & у                   & ю                 & ю                 & и-ю          & у           & (ь)ю     & и-ю        & е           & е                 & и-и        & и                     & мен-и                  \\ \cline{2-8}
 	  В    &                    \multicolumn{4}{c|}{как И / \an{Р}}                     & \multicolumn{3}{c|}{как И / \an{Р}} & у           & ю                 & и-ю        & ь                     & мя                     \\ \cline{2-8}
@@ -107,7 +107,7 @@
 	П (М)  & е (\st{у} / \st{ю}) & е                 & е                 & и-и          & е           & (ь)е     & и-и        & е           & е                 & и-и        & и (\st{и})            & мен-и                  \\ \hline
 	\strut & мост                & огонь             & чай               & сценарий     & небо        & море     & здание     & лампа       & неделя            & станция    & ночь                  & имя                    \\
 	  МЧ   & \an{кот / ёж}       & \an{учитель}      & \an{герой}        & \an{Василий} & \strut      & копьё    & \strut     & \an{папа}   & \an{героиня}      & \an{Мария} & \an{мышь}             & \strut                 \\ \hline
-	  N    & ы                   & и                 & и                 & и-и          & а           & (ь)я     & и-я        & ы           & и                 & и-и        & и                     & мен-а                  \\
+	  И    & ы                   & и                 & и                 & и-и          & а           & (ь)я     & и-я        & ы           & и                 & и-и        & и                     & мен-а                  \\
 	  Р    & ов / ей             & ей                & \us{ев} / \st{ёв} & и-ев         & $\emptyset$ & (ий) ей  & и-й        & $\emptyset$ & ь                 & и-й        & ей                    & мён                    \\
 	  Д    & ам                  & ям                & ям                & и-ям         & ам          & (ь)ям    & и-ям       & ам          & ям                & и-ям       & ям                    & мен-ам                 \\ \cline{2-13}
 	  В    &                    \multicolumn{4}{c|}{как И / \an{Р}}                     & \multicolumn{3}{c|}{как И / \an{Р}} &     \multicolumn{3}{c|}{как И / \an{Р}}      &      \multicolumn{2}{c|}{как И / \an{Р}}       \\ \cline{2-13}
